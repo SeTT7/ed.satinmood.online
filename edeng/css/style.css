@@ -1,0 +1,170 @@
+
+
+body{
+   background-color: #000;
+}
+
+.topo-0{
+   padding: 15px 0;
+   background-color: #872788;
+}
+
+.texto-topo-0{
+   color: #fff;
+   font-family: 'montserrat', sans-serif;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 1.2em;
+   letter-spacing: 0;
+   margin: 0;
+}
+
+.texto-topo-0 span{
+   font-family: 'montserrat-bold', sans-serif;
+   color: #fd09ff;
+   text-transform: uppercase;
+}
+
+.topo-1{
+   padding: 50px 0;
+   background-color: #fff;
+}
+
+.texto-topo-1{
+   color: #000;
+   font-family: 'montserrat', sans-serif;
+   font-size: 22px;
+   font-weight: 400;
+   margin-bottom: 25px;
+}
+
+.texto-assistindo{
+   color: #000;
+    font-family: Montserrat, Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.botao{
+   font-family: 'montserrat-bold', Sans-serif;
+   font-size: 20px;
+   font-weight: 700;
+   fill: #FFFFFF;
+   color: #fff;
+   border-radius: 8px 8px 8px 8px;
+   padding: 15px 80px;
+   background-image: linear-gradient(45deg, #00ff52, #00b823, #00ff52, #00b823);
+   background-size: 400% 200%;
+   transition: background 1.5s cubic-bezier(.5, .1, .4, .9);
+}
+
+.botao:hover{
+   color: #fff;
+}
+
+.rodape{
+   background-color: #000;
+   padding: 20px 0 20px 0;
+}
+
+.img-rodape{
+   width: 70%;
+   height: auto;
+   max-width: 200px;
+   margin-bottom: 25px;
+}
+
+.texto-rodape{
+   text-align: center;
+   color: #fff;
+   font-family: 'montserrat-bold', Sans-serif;
+   font-size: 12px;
+   margin: 10px 0;
+}
+
+.texto-rodape:hover{
+   color: #fff;
+}   
+
+.texto-rodape a{
+   color: #fff;
+   text-decoration: underline;
+}   
+
+.tam-mob{
+   min-height: 90vh;
+}
+
+@media screen and (max-width: 600px) {
+
+   .img-rodape{
+      max-width: 160px;
+      margin-bottom: 25px;
+   }
+
+   .topo-1{
+      padding-top: 35px;
+   }
+
+   .botao{
+      display: block;
+      text-align: center;
+      width: 95%;
+      margin: 0 auto;
+      padding: 15px 25px;
+   }
+
+   .texto-assistindo{
+      font-size: 16px;
+   }   
+      
+   .pc{
+      display: none;
+   }
+
+   .texto-topo-1{
+      font-size: 16px;
+   }     
+
+   .texto-topo-0{
+      font-size: 14px;
+      line-height: 1.3em;
+   }
+
+   .texto-rodape{
+      font-size: 10px;
+   }
+}
+
+.pulse {
+  animation: pulse 0.7s infinite;
+  margin: 0 auto;
+  display: table;
+  margin-top: 20px;
+  animation-direction: alternate;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -webkit-filter: brightness(100%);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    -webkit-filter: brightness(100%);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+  100% {
+    transform: scale(1.1);
+    filter: brightness(100%);
+  }
+}

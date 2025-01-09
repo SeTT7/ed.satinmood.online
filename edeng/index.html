@@ -1,0 +1,173 @@
+<html lang="pt-br"><head>
+    
+  	<meta charset="utf-8">
+  
+    <title>Institute Raje Vidya - Welcome</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+      
+    <link rel="shortcut icon" href="images/favicon.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+
+  <script src="js/player.js" async=""></script></head>
+  
+
+
+  <body>
+
+<div class="tam-mob">    
+ 
+<section class="topo-0">  
+
+  <div class="container">
+    
+    <div class="row justify-content-center align-items-center">
+      
+      <div class="col-12 col-md-12 text-center">
+
+        <p class="texto-topo-0"><strong>YOU</strong>  and a few people near <span class="cidade"></span> have been selected</p>
+
+      </div>
+    </div>
+  
+  </div>
+
+</section>
+
+
+<section class="topo-1">  
+
+  <div class="container">
+    
+    <div class="row justify-content-center align-items-center">
+      
+      <div class="col-12 col-md-10 text-center">
+
+        <h2 class="texto-topo-1">This video was banned in <b> 97 countries </b> and will be taken down today, <b><span id="date"></span></b></h2>                
+
+      </div>
+
+      <div class="col-12 col-md-9 text-center">
+        
+        <div id="vid_677f0c732215c4312815e1d5" style="position: relative; width: 100%; padding: 56.25% 0 0;"> <img id="thumb_677f0c732215c4312815e1d5" src="https://images.converteai.net/c7daae54-28f8-4e09-90be-5fed14986104/players/677f0c732215c4312815e1d5/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_677f0c732215c4312815e1d5" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_677f0c732215c4312815e1d5"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/c7daae54-28f8-4e09-90be-5fed14986104/players/677f0c732215c4312815e1d5/player.js", s.async=!0,document.head.appendChild(s); </script> <style> .elementor-element:has(#smartplayer) { width: 100%; } </style>
+
+
+      </div>
+
+      <div class="col-12 col-md-9 text-center">
+        
+        <p class="texto-assistindo">🟢 <strong><span id="pessoaqui"></span></strong> peoples are watching it now...</p>
+
+        <!--<div class="delay" style="display:none;">
+          
+          <a href="https://infosetads.mycartpanda.com/checkout/165963826:1" class="botao pulse">I WANT MY SPOT!</a>
+
+        </div>-->
+
+      </div>
+      
+    </div>
+  
+  </div>
+
+</section>
+
+
+
+<section class="rodape">  
+
+  <div class="container">
+    
+    <div class="row justify-content-center align-items-center">
+      
+      <div class="col-12 col-md-10 text-center">
+
+        <img src="images/logo.webp" class="img-rodape">
+
+        <p class="texto-rodape">COPYRIGHT © 2024 l ALL RIGHTS RESERVED l INSTITUTE RAJE VIDYA</p>
+
+        <p class="texto-rodape"><strong><a href=""><span style="text-decoration: underline;">TERMS OF USE</span></a> l <a href=""><span style="text-decoration: underline;">PRIVACY POLICIES</span></a></strong></p>
+
+      </div>
+    </div>
+  
+  </div>
+
+</section>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>   
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script src="js/5ff2bf3e95.js" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/advertorial.js"></script>
+
+<script type="text/javascript" src="js/tempo.js"></script>
+
+<script src="js/latest.js" data-utmify-prevent-subids="" async="" defer=""></script>
+
+<script>
+const DELAY_TIME_IN_SECONDS = 1799;
+const DELAY_ELEMENTS_CLASS = 'delay';
+
+let player;
+
+function showElements(className, value) {
+    for (const element of document.getElementsByClassName(className)) {
+        element.style.display = value;
+    }
+}
+
+function showElementsAfterDelay() {
+  const time = Math.floor(player.video.currentTime);
+  if (time >= DELAY_TIME_IN_SECONDS && player.paused == false) {
+    showElements(DELAY_ELEMENTS_CLASS, 'block');
+  }
+}
+
+window.onload = () => {
+    showElements(DELAY_ELEMENTS_CLASS, 'none');
+    const addFunctionShowElementsAfterDelay = setInterval(() => {
+      if (window.smartplayer.instances[0].mounted) {
+        player = window.smartplayer.instances[0];
+        player.events.events.timeupdate.push(showElementsAfterDelay);
+        clearInterval(addFunctionShowElementsAfterDelay);
+      }
+    }, 100)
+}
+</script>
+
+<script>
+
+//Mostra Data
+    const currentDate = new Date();
+    const day = currentDate.getDate().toString().padStart(2, '0');
+    const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+    const year = currentDate.getFullYear().toString().substr(-2);
+    document.getElementById('date').innerHTML = `${day}/${month}/${year}`;
+</script>
+    
+  
+
+
+
+
+
+
+
+</body></html>
